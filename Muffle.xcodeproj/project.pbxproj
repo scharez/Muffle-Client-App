@@ -14,6 +14,8 @@
 		111788CF2271F16000CDCCE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111788CD2271F16000CDCCE8 /* LaunchScreen.storyboard */; };
 		111788DA2271F16000CDCCE8 /* MuffleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111788D92271F16000CDCCE8 /* MuffleTests.swift */; };
 		111788E52271F16000CDCCE8 /* MuffleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111788E42271F16000CDCCE8 /* MuffleUITests.swift */; };
+		111788F42271F17D00CDCCE8 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111788F32271F17D00CDCCE8 /* background.jpg */; };
+		111788F62271F18400CDCCE8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 111788F52271F18400CDCCE8 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		111788E02271F16000CDCCE8 /* MuffleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuffleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111788E42271F16000CDCCE8 /* MuffleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuffleUITests.swift; sourceTree = "<group>"; };
 		111788E62271F16000CDCCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		111788F32271F17D00CDCCE8 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		111788F52271F18400CDCCE8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		111788C32271F15F00CDCCE8 /* Muffle */ = {
 			isa = PBXGroup;
 			children = (
+				111788F22271F16900CDCCE8 /* asssets */,
 				111788C42271F15F00CDCCE8 /* AppDelegate.swift */,
 				111788C62271F15F00CDCCE8 /* ViewController.swift */,
 				111788C82271F15F00CDCCE8 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				111788E62271F16000CDCCE8 /* Info.plist */,
 			);
 			path = MuffleUITests;
+			sourceTree = "<group>";
+		};
+		111788F22271F16900CDCCE8 /* asssets */ = {
+			isa = PBXGroup;
+			children = (
+				111788F52271F18400CDCCE8 /* logo.png */,
+				111788F32271F17D00CDCCE8 /* background.jpg */,
+			);
+			path = asssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				111788CF2271F16000CDCCE8 /* LaunchScreen.storyboard in Resources */,
+				111788F62271F18400CDCCE8 /* logo.png in Resources */,
+				111788F42271F17D00CDCCE8 /* background.jpg in Resources */,
 				111788CC2271F16000CDCCE8 /* Assets.xcassets in Resources */,
 				111788CA2271F15F00CDCCE8 /* Main.storyboard in Resources */,
 			);
