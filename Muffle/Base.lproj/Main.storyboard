@@ -52,6 +52,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="z5w-VA-aKv" kind="show" id="WQl-iB-G4X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,7 +69,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="-105" y="136"/>
+        </scene>
+        <!--Playlists-->
+        <scene sceneID="jcT-pA-jwD">
+            <objects>
+                <viewController id="cPn-EH-8A6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rr1-2B-uVg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Playlists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZa-ft-FGC">
+                                <rect key="frame" x="173" y="455" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lqm-81-fEO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Playlists" id="oei-87-aaQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pg-HV-S3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2326" y="478"/>
+        </scene>
+        <!--Playing now-->
+        <scene sceneID="QAP-ma-Qbx">
+            <objects>
+                <viewController id="E4y-px-hGE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c7d-p1-67D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Playing now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyw-Il-cQ6">
+                                <rect key="frame" x="166" y="260" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nRr-0X-Vlt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Playing now" id="PHX-ii-Ejd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hei-oN-djn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2327" y="-180"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mCA-HE-27S">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yzv-XU-eXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="z5w-VA-aKv" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wz5-lz-BrF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="E4y-px-hGE" kind="relationship" relationship="viewControllers" id="P8F-HL-Yb2"/>
+                        <segue destination="cPn-EH-8A6" kind="relationship" relationship="viewControllers" id="Egy-bR-JGZ"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1314" y="137"/>
         </scene>
     </scenes>
     <resources>
