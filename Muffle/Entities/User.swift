@@ -9,10 +9,18 @@
 import Foundation
 
 class User {
-    let username, password: String;
+    let username, password, firstName, lastName: String;
     
-    init(username: String, password: String) {
+    convenience init() {
+        self.init(username: "", password: "", firstName: "", lastName: "");
+    }
+    
+    init(username: String, password: String, firstName: String, lastName: String) {
         self.username = username;
         self.password = password;
+        self.firstName = firstName;
+        self.lastName = lastName;
     }
+    
+    
 }

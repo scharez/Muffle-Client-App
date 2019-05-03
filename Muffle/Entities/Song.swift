@@ -9,5 +9,18 @@
 import Foundation
 
 class Song {
+    let url, title, artist: String;
+    let duration: Double;
     
+    convenience init() {
+        self.init(url: "", title: "", artist: "", duration: 0.0);
+    }
+    
+    
+    init(url: String, title: String, artist: String, duration: Double) {
+        self.url = url;
+        self.title = title;
+        self.artist = artist;
+        self.duration = duration;
+    }
 }

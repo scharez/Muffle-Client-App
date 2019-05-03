@@ -14,11 +14,13 @@
 		111788CF2271F16000CDCCE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111788CD2271F16000CDCCE8 /* LaunchScreen.storyboard */; };
 		111788DA2271F16000CDCCE8 /* MuffleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111788D92271F16000CDCCE8 /* MuffleTests.swift */; };
 		111788E52271F16000CDCCE8 /* MuffleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111788E42271F16000CDCCE8 /* MuffleUITests.swift */; };
-		111788F42271F17D00CDCCE8 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111788F32271F17D00CDCCE8 /* background.jpg */; };
-		111788F62271F18400CDCCE8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 111788F52271F18400CDCCE8 /* logo.png */; };
+		1154911A227C561C009A590A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11549119227C561C009A590A /* LoginViewController.swift */; };
+		1154911C227C56B7009A590A /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154911B227C56B7009A590A /* RestApiManager.swift */; };
+		1154911E227C58FB009A590A /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154911D227C58FB009A590A /* DownloadManager.swift */; };
 		116669E7227AF2A5007E1D05 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116669E6227AF2A5007E1D05 /* Song.swift */; };
 		116669E9227AF2B7007E1D05 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116669E8227AF2B7007E1D05 /* User.swift */; };
 		116669EB227AF2D3007E1D05 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116669EA227AF2D3007E1D05 /* Playlist.swift */; };
+		116669EE227B3168007E1D05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116669ED227B3168007E1D05 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +54,13 @@
 		111788E02271F16000CDCCE8 /* MuffleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuffleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111788E42271F16000CDCCE8 /* MuffleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuffleUITests.swift; sourceTree = "<group>"; };
 		111788E62271F16000CDCCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		111788F32271F17D00CDCCE8 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		111788F52271F18400CDCCE8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		11549119227C561C009A590A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1154911B227C56B7009A590A /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		1154911D227C58FB009A590A /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		116669E6227AF2A5007E1D05 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		116669E8227AF2B7007E1D05 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		116669EA227AF2D3007E1D05 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		116669ED227B3168007E1D05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 		111788C32271F15F00CDCCE8 /* Muffle */ = {
 			isa = PBXGroup;
 			children = (
+				11549118227C54B9009A590A /* Helper */,
+				11549116227C4F6F009A590A /* Controller */,
 				116669E5227AF293007E1D05 /* Entities */,
 				116669E4227AF12E007E1D05 /* Models */,
 				111788F22271F16900CDCCE8 /* asssets */,
@@ -141,15 +147,31 @@
 		111788F22271F16900CDCCE8 /* asssets */ = {
 			isa = PBXGroup;
 			children = (
-				111788F52271F18400CDCCE8 /* logo.png */,
-				111788F32271F17D00CDCCE8 /* background.jpg */,
 			);
 			path = asssets;
+			sourceTree = "<group>";
+		};
+		11549116227C4F6F009A590A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11549119227C561C009A590A /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11549118227C54B9009A590A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1154911B227C56B7009A590A /* RestApiManager.swift */,
+				1154911D227C58FB009A590A /* DownloadManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		116669E4227AF12E007E1D05 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				116669ED227B3168007E1D05 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,8 +291,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				111788CF2271F16000CDCCE8 /* LaunchScreen.storyboard in Resources */,
-				111788F62271F18400CDCCE8 /* logo.png in Resources */,
-				111788F42271F17D00CDCCE8 /* background.jpg in Resources */,
 				111788CC2271F16000CDCCE8 /* Assets.xcassets in Resources */,
 				111788CA2271F15F00CDCCE8 /* Main.storyboard in Resources */,
 			);
@@ -297,10 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1154911A227C561C009A590A /* LoginViewController.swift in Sources */,
 				116669E9227AF2B7007E1D05 /* User.swift in Sources */,
+				1154911C227C56B7009A590A /* RestApiManager.swift in Sources */,
 				116669E7227AF2A5007E1D05 /* Song.swift in Sources */,
 				111788C72271F15F00CDCCE8 /* ViewController.swift in Sources */,
+				116669EE227B3168007E1D05 /* Model.swift in Sources */,
 				111788C52271F15F00CDCCE8 /* AppDelegate.swift in Sources */,
+				1154911E227C58FB009A590A /* DownloadManager.swift in Sources */,
 				116669EB227AF2D3007E1D05 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
