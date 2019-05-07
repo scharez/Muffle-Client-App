@@ -13,14 +13,46 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        startUp();
+    }
+
+    
+    @IBOutlet weak var tab: UISegmentedControl!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    var isRegister: Bool = false;
+    let ram = RestApiManager();
+    
+    
+    func startUp() {
+        
     }
     
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    @IBAction func changeTab(_ sender: Any) {
+        if (!isRegister) {
+            isRegister = true;
+        }
+    }
+    
+    @IBAction func login(_ sender: Any) {
+        
+        let user = User();
+        
+        user.username = usernameField.text!;
+        user.password = passwordField.text!;
+        
+        ram.login(user: user)
+        print(usernameField.text! + " " + passwordField.text!)
+    }
+    
+    
+    
+    
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
 }

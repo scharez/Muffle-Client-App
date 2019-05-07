@@ -9,8 +9,8 @@
 import Foundation
 
 class Song {
-    let url, title, artist: String;
-    let duration: Double;
+    var url, title, artist: String;
+    var duration: Double;
     
     convenience init() {
         self.init(url: "", title: "", artist: "", duration: 0.0);

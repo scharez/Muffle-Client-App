@@ -14,6 +14,7 @@ class RestApiManager: NSObject {
     
     func login(user: User) {
         
+        
     }
     
     func register(user: User)  {

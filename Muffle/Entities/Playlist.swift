@@ -9,8 +9,8 @@
 import Foundation
 
 class Playlist {
-    let id: Int;
-    let name: String;
+    var id: Int
+    var name: String;
     
     convenience init() {
         self.init(id: 1, name: "");
