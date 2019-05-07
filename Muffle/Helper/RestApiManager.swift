@@ -10,4 +10,17 @@ import Foundation
 
 class RestApiManager: NSObject {
     
+    //normal requests!
+    
+    func login(user: User) {
+        
+    }
+    
+    func register(user: User)  {
+        
+    }
+    
+    //requests with webtokens!
+    
+    
 }
