@@ -1,14 +1,14 @@
 //
-//  RegisterViewController.swift
+//  ViewController.swift
 //  Muffle
 //
-//  Created by Stefan Scharinger on 07.05.19.
+//  Created by Stefan Scharinger on 13.05.19.
 //  Copyright © 2019 Stefan Scharinger. All rights reserved.
 //
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

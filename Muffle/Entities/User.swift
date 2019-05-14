@@ -9,18 +9,16 @@
 import Foundation
 
 class User {
-    var username, password, firstName, lastName: String;
+    var username, password: String;
     var role: Role;
     
     convenience init() {
-        self.init(username: "", password: "", firstName: "", lastName: "", role: Role.MUFFLER);
+        self.init(username: "", password: "", role: Role.MUFFLER);
     }
     
-    init(username: String, password: String, firstName: String, lastName: String, role: Role) {
+    init(username: String, password: String, role: Role) {
         self.username = username;
         self.password = password;
-        self.firstName = firstName;
-        self.lastName = lastName;
         self.role = role;
     }
     

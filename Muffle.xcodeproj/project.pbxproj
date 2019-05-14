@@ -14,9 +14,9 @@
 		111788CF2271F16000CDCCE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111788CD2271F16000CDCCE8 /* LaunchScreen.storyboard */; };
 		111788DA2271F16000CDCCE8 /* MuffleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111788D92271F16000CDCCE8 /* MuffleTests.swift */; };
 		111788E52271F16000CDCCE8 /* MuffleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111788E42271F16000CDCCE8 /* MuffleUITests.swift */; };
+		113AC21C2289E940004043B5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC21B2289E940004043B5 /* TabBarViewController.swift */; };
 		113F14EA2281C48100A7811F /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F14E92281C48100A7811F /* Role.swift */; };
-		113F14EC228204F500A7811F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F14EB228204F500A7811F /* RegisterViewController.swift */; };
-		1154911A227C561C009A590A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11549119227C561C009A590A /* LoginViewController.swift */; };
+		1154911A227C561C009A590A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11549119227C561C009A590A /* AuthViewController.swift */; };
 		1154911C227C56B7009A590A /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154911B227C56B7009A590A /* RestApiManager.swift */; };
 		1154911E227C58FB009A590A /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154911D227C58FB009A590A /* DownloadManager.swift */; };
 		116669E7227AF2A5007E1D05 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116669E6227AF2A5007E1D05 /* Song.swift */; };
@@ -56,9 +56,9 @@
 		111788E02271F16000CDCCE8 /* MuffleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuffleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111788E42271F16000CDCCE8 /* MuffleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuffleUITests.swift; sourceTree = "<group>"; };
 		111788E62271F16000CDCCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113AC21B2289E940004043B5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		113F14E92281C48100A7811F /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
-		113F14EB228204F500A7811F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		11549119227C561C009A590A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		11549119227C561C009A590A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		1154911B227C56B7009A590A /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		1154911D227C58FB009A590A /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		116669E6227AF2A5007E1D05 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 		11549116227C4F6F009A590A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				11549119227C561C009A590A /* LoginViewController.swift */,
-				113F14EB228204F500A7811F /* RegisterViewController.swift */,
+				11549119227C561C009A590A /* AuthViewController.swift */,
+				113AC21B2289E940004043B5 /* TabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -323,11 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1154911A227C561C009A590A /* LoginViewController.swift in Sources */,
-				113F14EC228204F500A7811F /* RegisterViewController.swift in Sources */,
+				1154911A227C561C009A590A /* AuthViewController.swift in Sources */,
 				116669E9227AF2B7007E1D05 /* User.swift in Sources */,
 				1154911C227C56B7009A590A /* RestApiManager.swift in Sources */,
 				116669E7227AF2A5007E1D05 /* Song.swift in Sources */,
+				113AC21C2289E940004043B5 /* TabBarViewController.swift in Sources */,
 				111788C72271F15F00CDCCE8 /* ViewController.swift in Sources */,
 				116669EE227B3168007E1D05 /* Model.swift in Sources */,
 				111788C52271F15F00CDCCE8 /* AppDelegate.swift in Sources */,
