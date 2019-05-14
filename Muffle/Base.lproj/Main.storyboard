@@ -40,8 +40,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRo-2n-ArQ">
-                                <rect key="frame" x="16" y="373" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRo-2n-ArQ">
+                                <rect key="frame" x="16" y="365" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -57,8 +57,14 @@
                                     <action selector="performRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7N-sI-TYp"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EAi-tc-S7b">
-                                <rect key="frame" x="16" y="419" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EAi-tc-S7b">
+                                <rect key="frame" x="17" y="403" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgY-1O-5eu">
+                                <rect key="frame" x="17" y="441" width="344" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -68,30 +74,35 @@
                         <constraints>
                             <constraint firstItem="Ilb-bz-G6x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="23w-hC-QYm"/>
                             <constraint firstItem="VYa-Az-TgZ" firstAttribute="top" secondItem="8hZ-v8-Qdx" secondAttribute="bottom" constant="23" id="73P-z6-T7l"/>
-                            <constraint firstItem="EAi-tc-S7b" firstAttribute="trailing" secondItem="DRo-2n-ArQ" secondAttribute="trailing" id="BNf-RP-E4c"/>
+                            <constraint firstItem="EAi-tc-S7b" firstAttribute="trailing" secondItem="DRo-2n-ArQ" secondAttribute="trailing" constant="1" id="BNf-RP-E4c"/>
                             <constraint firstItem="VYa-Az-TgZ" firstAttribute="centerX" secondItem="CqB-HL-TfP" secondAttribute="centerX" id="EvE-TX-VMy"/>
                             <constraint firstItem="8hZ-v8-Qdx" firstAttribute="top" secondItem="CqB-HL-TfP" secondAttribute="bottom" constant="70" id="EzK-7C-wQy"/>
                             <constraint firstItem="VYa-Az-TgZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jjy-aE-s4I"/>
                             <constraint firstItem="CqB-HL-TfP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Mcj-Wz-ZX8"/>
                             <constraint firstItem="8hZ-v8-Qdx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="OvY-Zg-RHW"/>
                             <constraint firstItem="Ilb-bz-G6x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TRO-hI-D6q"/>
+                            <constraint firstItem="hgY-1O-5eu" firstAttribute="top" secondItem="EAi-tc-S7b" secondAttribute="bottom" constant="8" symbolic="YES" id="TrF-L3-CyZ"/>
                             <constraint firstItem="DRo-2n-ArQ" firstAttribute="centerX" secondItem="gC9-4v-Kuw" secondAttribute="centerX" id="Xrw-CG-UaL"/>
                             <constraint firstItem="VYa-Az-TgZ" firstAttribute="leading" secondItem="DRo-2n-ArQ" secondAttribute="leading" id="bsN-Rh-DIm"/>
                             <constraint firstItem="8hZ-v8-Qdx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="277" id="d0D-7S-Ra0"/>
-                            <constraint firstItem="DRo-2n-ArQ" firstAttribute="top" secondItem="VYa-Az-TgZ" secondAttribute="bottom" constant="16" id="fey-dN-w0B"/>
-                            <constraint firstItem="EAi-tc-S7b" firstAttribute="leading" secondItem="DRo-2n-ArQ" secondAttribute="leading" id="hw7-MV-mnh"/>
+                            <constraint firstItem="DRo-2n-ArQ" firstAttribute="top" secondItem="VYa-Az-TgZ" secondAttribute="bottom" constant="8" id="fey-dN-w0B"/>
+                            <constraint firstItem="EAi-tc-S7b" firstAttribute="leading" secondItem="DRo-2n-ArQ" secondAttribute="leading" constant="1" id="hw7-MV-mnh"/>
+                            <constraint firstItem="hgY-1O-5eu" firstAttribute="leading" secondItem="gC9-4v-Kuw" secondAttribute="leading" id="nhn-qs-HkD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8hZ-v8-Qdx" secondAttribute="trailing" constant="15" id="oHf-68-5ta"/>
-                            <constraint firstItem="gC9-4v-Kuw" firstAttribute="top" secondItem="DRo-2n-ArQ" secondAttribute="bottom" constant="94" id="otn-qH-V8E"/>
+                            <constraint firstItem="gC9-4v-Kuw" firstAttribute="top" secondItem="DRo-2n-ArQ" secondAttribute="bottom" constant="102" id="otn-qH-V8E"/>
                             <constraint firstItem="8hZ-v8-Qdx" firstAttribute="centerX" secondItem="CqB-HL-TfP" secondAttribute="centerX" id="qCh-V2-1AT"/>
-                            <constraint firstItem="VYa-Az-TgZ" firstAttribute="trailing" secondItem="DRo-2n-ArQ" secondAttribute="trailing" id="tfV-9d-7AJ"/>
+                            <constraint firstItem="VYa-Az-TgZ" firstAttribute="trailing" secondItem="DRo-2n-ArQ" secondAttribute="trailing" constant="2" id="tfV-9d-7AJ"/>
                             <constraint firstItem="Ilb-bz-G6x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uue-oO-5Q6"/>
-                            <constraint firstItem="EAi-tc-S7b" firstAttribute="top" secondItem="DRo-2n-ArQ" secondAttribute="bottom" constant="16" id="v3u-Fo-Gm0"/>
+                            <constraint firstItem="EAi-tc-S7b" firstAttribute="top" secondItem="DRo-2n-ArQ" secondAttribute="bottom" constant="8" id="v3u-Fo-Gm0"/>
+                            <constraint firstItem="hgY-1O-5eu" firstAttribute="leading" secondItem="EAi-tc-S7b" secondAttribute="leading" id="y7Y-8O-xOK"/>
+                            <constraint firstItem="hgY-1O-5eu" firstAttribute="trailing" secondItem="VYa-Az-TgZ" secondAttribute="trailing" id="yTr-UD-7H1"/>
                             <constraint firstItem="Ilb-bz-G6x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zTq-Bs-Fkt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="gC9-4v-Kuw" id="2m9-ro-TE8"/>
+                        <outlet property="emailField" destination="hgY-1O-5eu" id="qDL-7s-hhV"/>
                         <outlet property="passwordField" destination="DRo-2n-ArQ" id="NPM-g9-tcY"/>
                         <outlet property="retypePasswordField" destination="EAi-tc-S7b" id="uuy-vf-P9e"/>
                         <outlet property="tab" destination="8hZ-v8-Qdx" id="9J7-bH-qle"/>

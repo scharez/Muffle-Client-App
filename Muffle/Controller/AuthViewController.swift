@@ -19,6 +19,7 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var tab: UISegmentedControl!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var retypePasswordField: UITextField!
     @IBOutlet weak var button: UIButton!
    
@@ -30,12 +31,14 @@ class AuthViewController: UIViewController {
         
         usernameField.keyboardAppearance = .dark;
         passwordField.keyboardAppearance = .dark;
+        emailField.keyboardAppearance = .dark;
         retypePasswordField.keyboardAppearance = .dark;
         button.tintColor = UIColor.orange;
         tab.tintColor = UIColor.orange;
         
         if(!isRegister) {
             retypePasswordField.isHidden = true;
+            emailField.isHidden = true;
         }
     }
     
@@ -44,10 +47,12 @@ class AuthViewController: UIViewController {
         if (!isRegister) {
             isRegister = true;
             retypePasswordField.isHidden = false;
+            emailField.isHidden = false;
             button.setTitle("Register", for: .normal);
         } else {
             isRegister = false;
             retypePasswordField.isHidden = true;
+            emailField.isHidden = true;
             button.setTitle("Login", for: .normal);
         }
     }
@@ -55,13 +60,28 @@ class AuthViewController: UIViewController {
     
     @IBAction func performRequest(_ sender: Any) {
         
-        let user = User();
+        if(!isRegister) {
+            let login = User();
+            
+            login.username = usernameField.text!;
+            login.password = passwordField.text!;
+            
+            ram.login(user: login)
+            print(usernameField.text! + " " + passwordField.text!)
+        } else {
+            
+            let register = User();
+            
+            register.username = usernameField.text!;
+            register.password = passwordField.text!;
+            register.email = emailField.text!;
+            
+            ram.register(user: register)
+            print(usernameField.text! + " " + passwordField.text! + " " + emailField.text!)
+            
+        }
         
-        user.username = usernameField.text!;
-        user.password = passwordField.text!;
-        
-        ram.login(user: user)
-        print(usernameField.text! + " " + passwordField.text!)
+      
     }
     
 
