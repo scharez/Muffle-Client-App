@@ -16,6 +16,7 @@
 		111788E52271F16000CDCCE8 /* MuffleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111788E42271F16000CDCCE8 /* MuffleUITests.swift */; };
 		113AC21C2289E940004043B5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC21B2289E940004043B5 /* TabBarViewController.swift */; };
 		113F14EA2281C48100A7811F /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F14E92281C48100A7811F /* Role.swift */; };
+		11435EE1228D45CC00BD9BDF /* ShareToMuffle.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11435ED7228D45CC00BD9BDF /* ShareToMuffle.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1154911A227C561C009A590A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11549119227C561C009A590A /* AuthViewController.swift */; };
 		1154911C227C56B7009A590A /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154911B227C56B7009A590A /* RestApiManager.swift */; };
 		1154911E227C58FB009A590A /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154911D227C58FB009A590A /* DownloadManager.swift */; };
@@ -23,6 +24,9 @@
 		116669E9227AF2B7007E1D05 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116669E8227AF2B7007E1D05 /* User.swift */; };
 		116669EB227AF2D3007E1D05 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116669EA227AF2D3007E1D05 /* Playlist.swift */; };
 		116669EE227B3168007E1D05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116669ED227B3168007E1D05 /* Model.swift */; };
+		11BCD87F228D4C2F0039333E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BCD87E228D4C2F0039333E /* ShareViewController.swift */; };
+		11BCD882228D4C2F0039333E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BCD880228D4C2F0039333E /* MainInterface.storyboard */; };
+		11BCD886228D4C2F0039333E /* MuffleShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11BCD87C228D4C2F0039333E /* MuffleShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,36 @@
 			remoteGlobalIDString = 111788C02271F15F00CDCCE8;
 			remoteInfo = Muffle;
 		};
+		11435EDF228D45CC00BD9BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 111788B92271F15F00CDCCE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11435ED6228D45CC00BD9BDF;
+			remoteInfo = ShareToMuffle;
+		};
+		11BCD884228D4C2F0039333E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 111788B92271F15F00CDCCE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11BCD87B228D4C2F0039333E;
+			remoteInfo = MuffleShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11435EE5228D45CC00BD9BDF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				11435EE1228D45CC00BD9BDF /* ShareToMuffle.appex in Embed App Extensions */,
+				11BCD886228D4C2F0039333E /* MuffleShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		111788C12271F15F00CDCCE8 /* Muffle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muffle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +91,7 @@
 		111788E62271F16000CDCCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113AC21B2289E940004043B5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		113F14E92281C48100A7811F /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		11435ED7228D45CC00BD9BDF /* ShareToMuffle.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareToMuffle.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		11549119227C561C009A590A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		1154911B227C56B7009A590A /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		1154911D227C58FB009A590A /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
@@ -65,6 +99,10 @@
 		116669E8227AF2B7007E1D05 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		116669EA227AF2D3007E1D05 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		116669ED227B3168007E1D05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		11BCD87C228D4C2F0039333E /* MuffleShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MuffleShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BCD87E228D4C2F0039333E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		11BCD881228D4C2F0039333E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		11BCD883228D4C2F0039333E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +127,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11435ED4228D45CC00BD9BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BCD879228D4C2F0039333E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,6 +150,7 @@
 				111788C32271F15F00CDCCE8 /* Muffle */,
 				111788D82271F16000CDCCE8 /* MuffleTests */,
 				111788E32271F16000CDCCE8 /* MuffleUITests */,
+				11BCD87D228D4C2F0039333E /* MuffleShare */,
 				111788C22271F15F00CDCCE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +161,8 @@
 				111788C12271F15F00CDCCE8 /* Muffle.app */,
 				111788D52271F16000CDCCE8 /* MuffleTests.xctest */,
 				111788E02271F16000CDCCE8 /* MuffleUITests.xctest */,
+				11435ED7228D45CC00BD9BDF /* ShareToMuffle.appex */,
+				11BCD87C228D4C2F0039333E /* MuffleShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +247,16 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		11BCD87D228D4C2F0039333E /* MuffleShare */ = {
+			isa = PBXGroup;
+			children = (
+				11BCD87E228D4C2F0039333E /* ShareViewController.swift */,
+				11BCD880228D4C2F0039333E /* MainInterface.storyboard */,
+				11BCD883228D4C2F0039333E /* Info.plist */,
+			);
+			path = MuffleShare;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,10 +267,13 @@
 				111788BD2271F15F00CDCCE8 /* Sources */,
 				111788BE2271F15F00CDCCE8 /* Frameworks */,
 				111788BF2271F15F00CDCCE8 /* Resources */,
+				11435EE5228D45CC00BD9BDF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11435EE0228D45CC00BD9BDF /* PBXTargetDependency */,
+				11BCD885228D4C2F0039333E /* PBXTargetDependency */,
 			);
 			name = Muffle;
 			productName = Muffle;
@@ -248,6 +316,40 @@
 			productReference = 111788E02271F16000CDCCE8 /* MuffleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		11435ED6228D45CC00BD9BDF /* ShareToMuffle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11435EE4228D45CC00BD9BDF /* Build configuration list for PBXNativeTarget "ShareToMuffle" */;
+			buildPhases = (
+				11435ED3228D45CC00BD9BDF /* Sources */,
+				11435ED4228D45CC00BD9BDF /* Frameworks */,
+				11435ED5228D45CC00BD9BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareToMuffle;
+			productName = ShareToMuffle;
+			productReference = 11435ED7228D45CC00BD9BDF /* ShareToMuffle.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		11BCD87B228D4C2F0039333E /* MuffleShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BCD889228D4C2F0039333E /* Build configuration list for PBXNativeTarget "MuffleShare" */;
+			buildPhases = (
+				11BCD878228D4C2F0039333E /* Sources */,
+				11BCD879228D4C2F0039333E /* Frameworks */,
+				11BCD87A228D4C2F0039333E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuffleShare;
+			productName = MuffleShare;
+			productReference = 11BCD87C228D4C2F0039333E /* MuffleShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -269,6 +371,12 @@
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = 111788C02271F15F00CDCCE8;
 					};
+					11435ED6228D45CC00BD9BDF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					11BCD87B228D4C2F0039333E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 111788BC2271F15F00CDCCE8 /* Build configuration list for PBXProject "Muffle" */;
@@ -287,6 +395,8 @@
 				111788C02271F15F00CDCCE8 /* Muffle */,
 				111788D42271F16000CDCCE8 /* MuffleTests */,
 				111788DF2271F16000CDCCE8 /* MuffleUITests */,
+				11435ED6228D45CC00BD9BDF /* ShareToMuffle */,
+				11BCD87B228D4C2F0039333E /* MuffleShare */,
 			);
 		};
 /* End PBXProject section */
@@ -313,6 +423,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11435ED5228D45CC00BD9BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BCD87A228D4C2F0039333E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BCD882228D4C2F0039333E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +478,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11435ED3228D45CC00BD9BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BCD878228D4C2F0039333E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BCD87F228D4C2F0039333E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -365,6 +505,16 @@
 			isa = PBXTargetDependency;
 			target = 111788C02271F15F00CDCCE8 /* Muffle */;
 			targetProxy = 111788E12271F16000CDCCE8 /* PBXContainerItemProxy */;
+		};
+		11435EE0228D45CC00BD9BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11435ED6228D45CC00BD9BDF /* ShareToMuffle */;
+			targetProxy = 11435EDF228D45CC00BD9BDF /* PBXContainerItemProxy */;
+		};
+		11BCD885228D4C2F0039333E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11BCD87B228D4C2F0039333E /* MuffleShare */;
+			targetProxy = 11BCD884228D4C2F0039333E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,6 +533,14 @@
 				111788CE2271F16000CDCCE8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		11BCD880228D4C2F0039333E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BCD881228D4C2F0039333E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -507,6 +665,7 @@
 		111788EA2271F16000CDCCE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7KPA3MKAF;
@@ -525,6 +684,7 @@
 		111788EB2271F16000CDCCE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7KPA3MKAF;
@@ -622,6 +782,82 @@
 			};
 			name = Release;
 		};
+		11435EE2228D45CC00BD9BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7KPA3MKAF;
+				INFOPLIST_FILE = ShareToMuffle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.scharez.Muffle.ShareToMuffle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11435EE3228D45CC00BD9BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7KPA3MKAF;
+				INFOPLIST_FILE = ShareToMuffle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.scharez.Muffle.ShareToMuffle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11BCD887228D4C2F0039333E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7KPA3MKAF;
+				INFOPLIST_FILE = MuffleShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.scharez.Muffle.MuffleShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11BCD888228D4C2F0039333E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7KPA3MKAF;
+				INFOPLIST_FILE = MuffleShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = at.scharez.Muffle.MuffleShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -657,6 +893,24 @@
 			buildConfigurations = (
 				111788F02271F16000CDCCE8 /* Debug */,
 				111788F12271F16000CDCCE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11435EE4228D45CC00BD9BDF /* Build configuration list for PBXNativeTarget "ShareToMuffle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11435EE2228D45CC00BD9BDF /* Debug */,
+				11435EE3228D45CC00BD9BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BCD889228D4C2F0039333E /* Build configuration list for PBXNativeTarget "MuffleShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BCD887228D4C2F0039333E /* Debug */,
+				11BCD888228D4C2F0039333E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
