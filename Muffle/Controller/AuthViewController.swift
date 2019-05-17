@@ -49,6 +49,7 @@ class AuthViewController: UIViewController {
             retypePasswordField.isHidden = false;
             emailField.isHidden = false;
             button.setTitle("Register", for: .normal);
+            ram.test()
         } else {
             isRegister = false;
             retypePasswordField.isHidden = true;

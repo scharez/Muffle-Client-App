@@ -54,6 +54,7 @@ class RestApiManager: NSObject {
         var request = URLRequest(url: serviceUrl)
         request.httpMethod = "POST"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Authorization", forHTTPHeaderField: "")
         guard let httpBody = try? JSONSerialization.data(withJSONObject: param, options: []) else {
             return
         }
@@ -71,12 +72,35 @@ class RestApiManager: NSObject {
                 }
             }
             }.resume()
-        
-        
     }
     
     //requests with webtokens!
     
+    
+    func test() {
+        
+        let Url = String(format: "http://localhost:8080/rest/muffle/test")
+        guard let serviceUrl = URL(string: Url) else { return }
+        
+        
+        var request = URLRequest(url: serviceUrl)
+        request.httpMethod = "GET"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzY2hhcmV6IiwiaWF0IjoxNTU4MDc2MzQwLCJleHAiOjE1NTgxNzYzNDAsInJvbGUiOiJNVUZGTEVSIn0.yittRo9MWfYgTbp2oo1eywpFfCy7WD2KIEKQk1iJMig", forHTTPHeaderField: "Authorization")
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+            }.resume()
+    }
     
     
     

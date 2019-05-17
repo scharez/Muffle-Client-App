@@ -137,6 +137,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                         <viewLayoutGuide key="safeArea" id="Su6-AQ-6hh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" id="eMd-ST-SrN"/>
@@ -146,7 +147,7 @@
             </objects>
             <point key="canvasLocation" x="1769" y="454"/>
         </scene>
-        <!--Playroom-->
+        <!--Search-->
         <scene sceneID="uBf-vQ-EyN">
             <objects>
                 <viewController id="QzQ-gR-Z65" sceneMemberID="viewController">
@@ -156,7 +157,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Dns-M9-QWE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Playroom" id="NbP-LY-NSv"/>
+                    <tabBarItem key="tabBarItem" title="Search" id="NbP-LY-NSv"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJu-rB-2Gb" userLabel="First Responder" sceneMemberID="firstResponder"/>

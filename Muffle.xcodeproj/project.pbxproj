@@ -16,7 +16,6 @@
 		111788E52271F16000CDCCE8 /* MuffleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111788E42271F16000CDCCE8 /* MuffleUITests.swift */; };
 		113AC21C2289E940004043B5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC21B2289E940004043B5 /* TabBarViewController.swift */; };
 		113F14EA2281C48100A7811F /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113F14E92281C48100A7811F /* Role.swift */; };
-		11435EE1228D45CC00BD9BDF /* ShareToMuffle.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11435ED7228D45CC00BD9BDF /* ShareToMuffle.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1154911A227C561C009A590A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11549119227C561C009A590A /* AuthViewController.swift */; };
 		1154911C227C56B7009A590A /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154911B227C56B7009A590A /* RestApiManager.swift */; };
 		1154911E227C58FB009A590A /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154911D227C58FB009A590A /* DownloadManager.swift */; };
@@ -44,13 +43,6 @@
 			remoteGlobalIDString = 111788C02271F15F00CDCCE8;
 			remoteInfo = Muffle;
 		};
-		11435EDF228D45CC00BD9BDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 111788B92271F15F00CDCCE8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 11435ED6228D45CC00BD9BDF;
-			remoteInfo = ShareToMuffle;
-		};
 		11BCD884228D4C2F0039333E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 111788B92271F15F00CDCCE8 /* Project object */;
@@ -67,7 +59,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				11435EE1228D45CC00BD9BDF /* ShareToMuffle.appex in Embed App Extensions */,
 				11BCD886228D4C2F0039333E /* MuffleShare.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -272,7 +263,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				11435EE0228D45CC00BD9BDF /* PBXTargetDependency */,
 				11BCD885228D4C2F0039333E /* PBXTargetDependency */,
 			);
 			name = Muffle;
@@ -505,11 +495,6 @@
 			isa = PBXTargetDependency;
 			target = 111788C02271F15F00CDCCE8 /* Muffle */;
 			targetProxy = 111788E12271F16000CDCCE8 /* PBXContainerItemProxy */;
-		};
-		11435EE0228D45CC00BD9BDF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 11435ED6228D45CC00BD9BDF /* ShareToMuffle */;
-			targetProxy = 11435EDF228D45CC00BD9BDF /* PBXContainerItemProxy */;
 		};
 		11BCD885228D4C2F0039333E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
