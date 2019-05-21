@@ -11,14 +11,17 @@ import Foundation
 class User {
     var username, password, email: String;
     
+    var playlists : [Playlist] = []
+    
     convenience init() {
-        self.init(username: "", password: "", email: "");
+        self.init(username: "", password: "", email: "", playlists: []);
     }
     
-    init(username: String, password: String, email: String) {
+    init(username: String, password: String, email: String, playlists: [Playlist]) {
         self.username = username;
         self.password = password;
         self.email = email;
+        self.playlists = playlists;
     }
     
     

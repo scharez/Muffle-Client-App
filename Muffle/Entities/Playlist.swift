@@ -12,12 +12,15 @@ class Playlist {
     var id: Int
     var name: String;
     
+    var songs : [Song];
+    
     convenience init() {
-        self.init(id: 1, name: "");
+        self.init(id: 1, name: "", songs: []);
     }
     
-    init(id: Int, name: String) {
+    init(id: Int, name: String, songs : [Song]) {
         self.id = id;
         self.name = name;
+        self.songs = songs;
     }
 }

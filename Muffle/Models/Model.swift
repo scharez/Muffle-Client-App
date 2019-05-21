@@ -10,4 +10,7 @@ import Foundation;
 
 class Model {
     let user = User();
+    
+    
+    
 }
