@@ -31,6 +31,7 @@
 		EE4B885322933F0A000E8A8D /* Punk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE4B885022933F09000E8A8D /* Punk.mp3 */; };
 		EE4B885422933F0A000E8A8D /* Sum 41 - Fatlip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE4B885122933F09000E8A8D /* Sum 41 - Fatlip.mp3 */; };
 		EE4B885522933F0A000E8A8D /* My Chemical Romance - The Sharpest Lives.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE4B885222933F0A000E8A8D /* My Chemical Romance - The Sharpest Lives.mp3 */; };
+		EE619C8F229C1AE40030CC68 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE619C8E229C1AE40030CC68 /* PopUpVC.swift */; };
 		EE6DBF3422918B6C00613C10 /* InsideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6DBF3322918B6C00613C10 /* InsideCollectionViewCell.swift */; };
 		EE6DBF3822918E2100613C10 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6DBF3722918E2100613C10 /* PlaylistViewController.swift */; };
 /* End PBXBuildFile section */
@@ -106,6 +107,7 @@
 		EE4B885022933F09000E8A8D /* Punk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Punk.mp3; sourceTree = "<group>"; };
 		EE4B885122933F09000E8A8D /* Sum 41 - Fatlip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sum 41 - Fatlip.mp3"; sourceTree = "<group>"; };
 		EE4B885222933F0A000E8A8D /* My Chemical Romance - The Sharpest Lives.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "My Chemical Romance - The Sharpest Lives.mp3"; sourceTree = "<group>"; };
+		EE619C8E229C1AE40030CC68 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
 		EE6DBF3322918B6C00613C10 /* InsideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE6DBF3722918E2100613C10 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,6 +280,7 @@
 		EE6DBF3222918B2A00613C10 /* Playlist */ = {
 			isa = PBXGroup;
 			children = (
+				EE619C8E229C1AE40030CC68 /* PopUpVC.swift */,
 				EE332E9022919A9F00FAE2F5 /* CollectionViewController.swift */,
 				EE6DBF3722918E2100613C10 /* PlaylistViewController.swift */,
 				EE6DBF3322918B6C00613C10 /* InsideCollectionViewCell.swift */,
@@ -483,6 +486,7 @@
 				EE6DBF3422918B6C00613C10 /* InsideCollectionViewCell.swift in Sources */,
 				EE4B884F22933EB1000E8A8D /* PlayingViewController.swift in Sources */,
 				116669E9227AF2B7007E1D05 /* User.swift in Sources */,
+				EE619C8F229C1AE40030CC68 /* PopUpVC.swift in Sources */,
 				EE332E9122919A9F00FAE2F5 /* CollectionViewController.swift in Sources */,
 				1154911C227C56B7009A590A /* RestApiManager.swift in Sources */,
 				116669E7227AF2A5007E1D05 /* Song.swift in Sources */,

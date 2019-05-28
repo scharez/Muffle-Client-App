@@ -44,12 +44,41 @@ class PlayingViewController: UIViewController,UITableViewDataSource, UITableView
             } catch {
                 print("Error:", error.localizedDescription)
             }
+            thisSong+=1
             audioPlayer.play()
         }
     }
     
     
+    @IBAction func previousSong(_ sender: UIButton) {
+        songName.text=songs[thisSong-1]
+        playThis(thisOne: songs[thisSong-1])
+        
+    }
+    func playThis(thisOne:String){
+        let url = Bundle.main.url(forResource: thisOne, withExtension: "mp3")
+
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url!)
+            audioPlayer.prepareToPlay()
+        } catch {
+            print("Error:", error.localizedDescription)
+        }
+        thisSong+=1
+        audioPlayer.play()
+    }
+    @IBAction func pauseSong(_ sender: UIButton) {
+        if audioPlayer.isPlaying{
+            audioPlayer.pause()
+        }else{
+            audioPlayer.play()
+        }
+    }
     
+    @IBAction func nextSong(_ sender: UIButton) {
+        songName.text=songs[thisSong+1]
+        playThis(thisOne: songs[thisSong+1])
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // gettingSongNames()

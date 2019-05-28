@@ -11,6 +11,7 @@ import Foundation
 class RestApiManager: NSObject {
     
     //normal requests!
+    var token : String = "";
     
     func login(user: User) {
         
@@ -32,6 +33,7 @@ class RestApiManager: NSObject {
 
             if let data = data {
                 do {
+                    print(data)
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     print(json)
                 } catch {
@@ -65,8 +67,14 @@ class RestApiManager: NSObject {
             
             if let data = data {
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]
                     print(json)
+                    if let isItCorrect = json!["typ"] as? String {
+                        if (isItCorrect == "success" ){
+                            self.token = (json!["content"] as? String)!
+                        }
+                    }
+                    
                 } catch {
                     print(error)
                 }
@@ -86,7 +94,38 @@ class RestApiManager: NSObject {
         var request = URLRequest(url: serviceUrl)
         request.httpMethod = "GET"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzY2hhcmV6IiwiaWF0IjoxNTU4MDc2MzQwLCJleHAiOjE1NTgxNzYzNDAsInJvbGUiOiJNVUZGTEVSIn0.yittRo9MWfYgTbp2oo1eywpFfCy7WD2KIEKQk1iJMig", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer " + self.token, forHTTPHeaderField: "Authorization")
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                    
+                } catch {
+                    print(error)
+                }
+            }
+            }.resume()
+    }
+    func getPlaylist(user: User)  {
+        
+        let Url = String(format: "http://localhost:8080/rest/muffle/getPlaylist")
+        guard let serviceUrl = URL(string: Url) else { return }
+        
+        let param = ["" : ""]
+        
+        var request = URLRequest(url: serviceUrl)
+        request.httpMethod = "POST"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+         request.setValue("Bearer " + self.token, forHTTPHeaderField: "Authorization")
+        
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: param, options: []) else {
+            return
+        }
+        request.httpBody = httpBody
         
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error) in
@@ -102,6 +141,36 @@ class RestApiManager: NSObject {
             }.resume()
     }
     
+    func createPlaylist()  {
+        
+        let Url = String(format: "http://localhost:8080/rest/muffle/createPlaylist")
+        guard let serviceUrl = URL(string: Url) else { return }
+        
+        let param = ["name" : "Maschine"]
+        
+        var request = URLRequest(url: serviceUrl)
+        request.httpMethod = "POST"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer " + self.token, forHTTPHeaderField: "Authorization")
+        
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: param, options: []) else {
+            return
+        }
+        request.httpBody = httpBody
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+            }.resume()
+    }
     
     
 }
