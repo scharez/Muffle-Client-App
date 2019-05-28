@@ -9,8 +9,10 @@
 import Foundation;
 
 class Model {
-    let user = User();
     
+    let user = User();
+    var playlists = [String]()
+    let token: String = "";
     
     
 }

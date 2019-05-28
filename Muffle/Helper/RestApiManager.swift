@@ -13,6 +13,8 @@ class RestApiManager: NSObject {
     //normal requests!
     var token : String = "";
     
+    var model = Model()
+    
     func login(user: User) {
         
         let Url = String(format: "http://localhost:8080/rest/muffle/login")

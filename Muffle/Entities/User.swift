@@ -11,7 +11,7 @@ import Foundation
 class User {
     var username, password, email: String;
     
-    var playlists : [Playlist] = []
+    var playlists : [Playlist];
     
     convenience init() {
         self.init(username: "", password: "", email: "", playlists: []);
